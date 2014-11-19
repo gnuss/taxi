@@ -1,0 +1,232 @@
+/* Welcome to Compass. Use this file to write IE specific override styles.
+ * Import this file using the following HTML or equivalent:
+ * <!--[if IE]>
+ *   <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+ * <![endif]--> */
+
+ @import "compass";
+
+.container {
+  width: 940px;
+  padding: 0;
+}
+
+.clearfix {
+  display: block;
+  height: 1%;
+}
+
+.input-style,
+.textarea-style,
+.select-style {
+  display: inline;
+  height: auto;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  vertical-align: middle;
+  width: expression((this.parentNode.clientWidth - parseInt(this.currentStyle['paddingLeft']) - parseInt(this.currentStyle['paddingRight'])) + 'px');
+  zoom: 1;
+}
+
+.textarea-style {
+  height: 25px;
+  padding-bottom: 0;
+  padding-top: 5px;
+}
+
+.select-style {
+  height: 30px;
+}
+
+.field {
+  display: block;
+  zoom: 1;
+}
+
+.item {
+  display: inline;
+  zoom: 1;
+}
+
+.sprite {
+  display: inline;
+  zoom: 1;
+}
+
+
+/****************************************Partials****************************************/
+
+/********************Header********************/
+
+header {
+
+  .logo {
+    width: 1%;
+  }
+
+  .taxi-number {
+    line-height: 1.2;
+  }
+}
+
+/********************Footer********************/
+
+footer {
+
+  .container {
+    text-justify: newspaper;
+    zoom: 1;
+    z-index: 1;
+  }
+
+  .copyright, .our-app-footer, .created-by {
+    display: inline;
+    zoom: 1;
+  }
+}
+
+/********************Mobile menu********************/
+
+.mobile-menu {
+  display: none;
+}
+
+/********************Popup********************/
+
+.popup-overlay:after {
+  display: inline;
+  zoom: 1;
+}
+
+
+/****************************************Index page****************************************/
+
+.order-taxi-wrap {
+
+
+  .order-taxi {
+
+    .field.span2 input {
+      width: 220px;
+
+      &:first-child {
+        margin-right: 20px;
+      }
+    }
+  }
+}
+
+.order-taxi-wrap {
+
+  .stages-order ul li {
+    display: inline;
+    line-height: 1.2;
+    zoom: 1;
+  }
+
+  .order-taxi {
+
+    .ajax-part {
+      z-index: 1;
+    }
+
+    .order-form {
+      width: auto;
+
+      form {
+
+        .field {
+
+          .input-fields {
+
+            #input-time {
+              float: none;
+              margin-left: 20px;
+              width: 51%;
+            }
+          }
+        }
+
+        .field.span2 input {
+          width: 205px;
+
+          &:first-child {
+            margin-right: 20px;
+          }
+        }
+      }
+
+      .counter-info {
+
+        .counter,
+        .distance,
+        .price,
+        .tariff {
+          display: inline;
+          zoom: 1;
+        }
+      }
+    }
+
+    .order-form.go-settings form {
+      
+      .select-wishes {
+        width: 100%;
+
+        .select-arrow-wrap {
+
+          .select-arrow {
+            bottom: 0;
+            margin-top: -2px;
+            top: 50%;
+          }
+        }
+      }
+    }
+
+    .visual-part {
+
+      .estimate-trip {
+        width: 340px;
+
+        form .field-reviews textarea {
+          height: 75px;
+        }
+      }
+    }
+  }
+}
+
+
+/****************************************Layout internal pages****************************************/
+
+/********************Private office********************/
+
+.private-office-page {
+
+  .registration-form {
+    width: 415px;
+
+    .field {
+
+      .field-label {
+        margin-right: 6%;
+      }
+
+      .input-fields {
+        width: 76%;
+      }
+    }
+  }
+}
+
+
+/****************************************Error404****************************************/
+
+.error-page {
+
+  .error-footer nav li {
+    display: inline;
+    zoom: 1;
+  }
+}

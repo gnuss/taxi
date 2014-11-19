@@ -1,0 +1,232 @@
+.private-office-page {
+
+  h1 {
+    margin-bottom: 16px;
+  }
+
+  .navigation {
+    margin-bottom: 33px;
+
+    li {
+      float: left;
+      margin-right: 5px;
+
+      a {
+        @include border-radius(3px);
+        border: 0;
+        display: block;
+        padding: 3px 8px;
+
+        span {
+          border-bottom: 1px solid #ffc527;
+          display: inline-block;
+        }
+
+        &:hover span {
+          border-bottom-color: #000;
+        }
+      }
+    }
+
+    li.active a {
+      background: #000;
+      border: 0;
+      color: #fff;
+
+      span {
+        border: 0;
+      }
+    }
+  }
+
+  .registration-form {
+    //margin: 0 auto;
+    max-width: 415px;
+
+    .field {
+      margin-top: 10px;
+
+      .field-label {
+        font-weight: normal;
+        line-height: 30px;
+        margin-right: 5%;
+        width: 18%;
+      }
+
+      .input-fields {
+        width: 77%;
+
+        .attention {
+          color: #cd4c2e;
+          font-size: 12px;
+          line-height: 1.66666;
+        }
+      }
+    }
+
+    .submit-field {
+      margin-top: 17px;
+      text-align: right;
+    }
+  }
+
+  .my-orders {
+    padding: 0 10px;
+
+    .my-order {
+      border-bottom: 1px solid #959595;
+      font-size: 14px;
+      margin-bottom: 23px;
+      padding-bottom: 22px;
+
+      .my-order-header {
+        margin-bottom: 15px;
+
+        .pull-left {
+          font-weight: bold;
+          line-height: 1.4;
+        }
+
+        .pull-right {
+          font-size: 16px;
+        }
+
+        .start-order {
+
+          .refresh-order {
+            vertical-align: middle;
+          }
+
+          a:hover .refresh-order {
+            @include icons-sprite(refresh-hover);
+          }
+        }
+
+        .finish-order {
+          color: #037808;
+        }
+
+        @media (max-width: 360px) {
+
+          .pull-left {
+            float: none;
+            margin-bottom: 5px;
+          }
+
+          .pull-right {
+            float: none;
+          }
+        }
+      }
+
+      .my-order-content {
+        margin-bottom: 19px;
+
+        .point {
+          float: left;
+          width: 47%;
+
+          .txt {
+            margin-left: 30px;
+          }
+        }
+
+        .point-a {
+          margin-right: 6%;
+        }
+
+        @media (min-width: 720px) and (max-width: 809px) {
+
+          .point {
+            width: 100%;
+          }
+
+          .point-a {
+            margin-bottom: 20px;
+            margin-right: 0;
+          }
+        }
+
+        @media (max-width: 469px) {
+
+          .point {
+            width: 100%;
+          }
+
+          .point-a {
+            margin-bottom: 20px;
+          }
+        }
+      }
+
+      .my-order-footer {
+
+        table.order-table {
+          display: none;
+          margin-bottom: 10px;
+          width: 100%;
+
+          th {
+            font-weight: bold;
+          }
+
+          th, td {
+            border-bottom: 1px solid #d7d7d7;
+            padding: 8px 0;
+          }
+        }
+
+        .show-order-table {
+
+          .show-hide-table {
+
+            a {
+
+              .underline {
+                border-bottom-style: dashed;
+              }
+
+              .show-table, .hide-table {
+                vertical-align: middle;
+              }
+
+              &:hover .show-table {
+                @include icons-sprite(show-table-hover);
+              }
+
+              &:hover .hide-table {
+                @include icons-sprite(hide-table-hover);
+              }
+            }
+          }
+
+          .tactic {
+
+            .del {
+              border-bottom-color: #efc5b9;
+              color: #d54c0f;
+              margin-left: 5px;
+
+              &:hover {
+                border-bottom-color: #fbcdbe;
+                color: #f6733a;
+              }
+            }
+          }
+
+          @media (max-width: 360px) {
+
+            .show-hide-table {
+              float: none;
+              margin-bottom: 5px;
+            }
+
+            .tactic {
+              float: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}

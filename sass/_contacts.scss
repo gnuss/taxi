@@ -1,0 +1,26 @@
+.contacts-page {
+
+  h1 {
+    margin-bottom: 15px;
+  }
+
+  .contacts-sections {
+
+    .contacts-section {
+      margin-bottom: 22px;
+
+      h3 {
+        margin-bottom: 5px;
+      }
+
+      .unordered-list-style {
+        //margin-left: 45px;
+        margin-left: 7.5%;
+
+        li:after {
+          top: 12px;
+        }
+      }
+    }
+  }
+}
